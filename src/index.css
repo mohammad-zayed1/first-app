@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+font-family: 'Roboto', sans-serif;
+font-size: 10px;
+background-color: #444;
+padding: 3rem 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+background-color: #333;
+width: 60rem;
+margin: 0 auto;
+padding: 3rem 0;
+height: calc(100vh - 6rem);
+border-radius: 10px;
+}
+.App{
+  width: 30rem;
+  background-color: #222;
+  margin: 0 auto;
+  height: calc(100vh - 12rem);
+  overflow: hidden;
+ border-radius: 10px;
+ position: relative;
+}
+.info{
+
+}
+.info img{
+  width: 100%;
+  max-width: 100%;
+}
+
+.info h2 {
+  font-size:2rem;
+  color: rgb(238, 233, 233);
+  margin: 1rem 0 0.5rem 0;
+}
+.info h3 {
+ font-size: 1.5rem;
+color: rgb(116, 114, 114);
+  margin-bottom: 0.5rem;
+}
+.info h4 {
+font-size: 1.2rem;
+color: rgb(153, 153, 153);
+}
+
+.info .btns{
+  margin: 2rem 0;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.info .btns .btn{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 10rem;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #222;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.info .btns .btn:hover{
+  opacity: 0.8;
+}
+.info .btns .btn i{
+  margin-right:0.5rem;
+  margin-top: 2px;
+  
+}
+
+.info .btns .linkedin{
+  background-color: #0077b5;
+  color: white;
+}
+
+.about , .interests{
+  padding: 0 3rem;
+  text-align:left;
+}
+.about h1 , .interests h1{
+  color: rgb(238, 233, 233);
+  margin-bottom: 0.5rem;
+}
+.about p , .interests p{
+  color: rgb(153, 153, 153);
+}
+
+.interests , .about{
+  margin-top: 3rem;
+ 
+}
+
+.footer{
+  background-color:#111;
+  height:5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+}
+
+.footer ul{
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer ul li{
+  font-size: 2.5rem;
+  color: rgb(153, 153, 153);
 }
